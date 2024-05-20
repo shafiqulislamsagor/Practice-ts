@@ -14,3 +14,9 @@ unknownNotsafe = 587;
 console.log(unknownNotsafe);
 const ArrayName = ['s', 'a', 'e'];
 console.log(ArrayName);
+const number = [2, 3, 3, 4];
+number.push(2);
+console.log(number);
+const booleanArray = [true, false, true, false];
+// booleanArray.push(true)  sudu pora jai... changed kora jai na
+console.log(booleanArray);
