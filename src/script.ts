@@ -28,8 +28,19 @@
 
 // console.log(multiply(2,3))
 
-let fruits = ['apple', 'orange', 'banana' ]
+// let fruits = ['apple', 'orange', 'banana' ]
 
-fruits.push('sagor')
+// fruits.push('sagor')
 
-console.log(fruits)
+// console.log(fruits)
+
+let person = {
+    name : "Masrafi",
+    age: 34,
+    inCaptain: true
+}
+
+person.age = 30
+// person.country = "bangladesh"  error message
+
+console.log(person)
