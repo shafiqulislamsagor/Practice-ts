@@ -126,3 +126,25 @@
 // }
 // console.log(myFun('sagor','hasan'))
 // myFun('sagor' , 21) error massage
+
+type stringOrNumber = string | number
+type user = {
+    name:string , 
+    age:number
+} 
+
+const userDetails = (
+    id: string | number , 
+    user : user
+) : any =>{
+    console.log(`User id is ${id} , name is ${user.name} , age is ${user.age}`)
+}
+
+const sayHello = (user:user):any =>{
+    console.log(`Hello ${user.age > 50 ? 'sir':'Mr'} ${user.name}`)
+}
+
+
+userDetails('123', {name:'sagor', age:34})
+
+sayHello({name:'sagor', age:34})
