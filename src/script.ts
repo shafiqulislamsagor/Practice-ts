@@ -92,12 +92,37 @@
 
 // console.log(a)
 
-let b : {
-    name:any,
-    age:any
-}
+// let b : {
+//     name:any,
+//     age:any
+// }
 
-b = {
-    name: 'sagor',
-    age: 34
-}
+// b = {
+//     name: 'sagor',
+//     age: 34
+// }
+
+// const myFunction = () =>{
+//     console.log('Hello World')
+// }
+
+// let myFunction:Function;
+
+// myFunction = () => {
+//     console.log('Hello World')
+// }
+
+// const myFunction:Function = () =>{
+//     console.log('first function')
+// }
+
+// const myFun = (a:string , b:string , c?:string = 'sagor') =>{
+//     console.log(`hello ${a} + ${b}`)
+// }  defult values allready defined errors is c?:string
+// const myFun = (a:string , b:string , c:string = 'sagor') : string =>{
+//     // console.log(`hello ${a} + ${b}`)
+//     const  value = `hello ${a} + ${b}`
+//     return value
+// }
+// console.log(myFun('sagor','hasan'))
+// myFun('sagor' , 21) error massage
