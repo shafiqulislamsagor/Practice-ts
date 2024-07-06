@@ -39,15 +39,24 @@
 // let a:(string | number)[] = []
 // a.push('sagor',54 , 74 , 'apple') 
 // object 
-let c;
+// let c : {name:string , age:number , country:string , home: string} 
 // c = {
 //     name:'sagor',
 //     age: 34,
 //     inCaptain: true
 // } error massage 
-c = {
+// c = {
+//     name:'sagor',
+//     age: 34,
+//     country: 'bangladesh',
+//     home: 'dhaka'
+// }
+// let a: any ;
+// a = 2 
+// a = 'sagor'
+// console.log(a)
+let b;
+b = {
     name: 'sagor',
-    age: 34,
-    country: 'bangladesh',
-    home: 'dhaka'
+    age: 34
 };

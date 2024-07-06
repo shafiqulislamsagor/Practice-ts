@@ -70,7 +70,7 @@
 
 // object 
 
-let c : {name:string , age:number , country:string , home: string} 
+// let c : {name:string , age:number , country:string , home: string} 
 
 // c = {
 //     name:'sagor',
@@ -78,10 +78,26 @@ let c : {name:string , age:number , country:string , home: string}
 //     inCaptain: true
 // } error massage 
 
-c = {
-    name:'sagor',
-    age: 34,
-    country: 'bangladesh',
-    home: 'dhaka'
+// c = {
+//     name:'sagor',
+//     age: 34,
+//     country: 'bangladesh',
+//     home: 'dhaka'
+// }
+
+// let a: any ;
+
+// a = 2 
+// a = 'sagor'
+
+// console.log(a)
+
+let b : {
+    name:any,
+    age:any
 }
 
+b = {
+    name: 'sagor',
+    age: 34
+}
