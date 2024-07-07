@@ -187,33 +187,43 @@
 
 // console.log(userDetails('123', {name:'sagor', age:34}))
 
-class Player {
-    name: string; 
-    age: number;
-    country: string
+// class Player {
+//     public name: string; 
+//     private age: number;
+//     readonly country: string
+//     constructor(n:string , a:number , c:string){
+//         this.name = n;
+//         this.age = a;
+//         this.country = c;
+//     }
 
-    constructor(n:string , a:number , c:string){
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
+//     play(){
+//        return `${this.name} from ${this.country} is playing`
+//     }
+// }
+// // shotHand
+// class Players {
+//     constructor(
+//         public name:string ,
+//         private age: number ,
+//         readonly country: string ,
+//     ){}
+//     play(){
+//         return `${this.name} from ${this.country} is playing`
+//      }
+// }
 
-    play(){
-       return `${this.name} from ${this.country} is playing`
-    }
-}
+// const masrafi = new Player('masrafi' , 34 , 'Bangladesh')
 
-const masrafi = new Player('masrafi' , 34 , 'Bangladesh')
-
-// console.log(masrafi)
-// console.log(masrafi.play())
+// // console.log(masrafi)
+// // console.log(masrafi.play())
 
 
-const players:Player[] = []
+// const players:Player[] = []
 
-// players.push('sagor') error message
+// // players.push('sagor') error message
 
-players.push(new Player('sagor', 34 , 'Bangladesh') )
-players.push(masrafi)
+// players.push(new Player('sagor', 34 , 'Bangladesh') )
+// players.push(masrafi)
 
-console.log(players[0])
+// console.log(players[0])
