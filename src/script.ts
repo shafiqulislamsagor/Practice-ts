@@ -318,18 +318,25 @@
 
 // ENUM
 
-enum Type { SUCCESS , FAILURE , UNAUTHETICATED , FORBIDDEN}
+// enum Type { SUCCESS , FAILURE , UNAUTHETICATED , FORBIDDEN}
 
-interface APIResponse<T>{
-    status: number ;
-    type: Type ;
-    data: T;
-}
+// interface APIResponse<T>{
+//     status: number ;
+//     type: Type ;
+//     data: T;
+// }
 
-const response1: APIResponse<object> = {
-    status: 200,
-    type: Type.SUCCESS,
-    data: {
-        message: "Data fetched successfully"
-    }
-}
+// const response1: APIResponse<object> = {
+//     status: 200,
+//     type: Type.SUCCESS,
+//     data: {
+//         message: "Data fetched successfully"
+//     }
+// }
+
+// let a = [2 , 'hello' , {p:3}]
+
+// // a[2] = false error message
+// a[3] = 2
+
+// let b: [string , number , object ] = ['string',34 , {p:3}]

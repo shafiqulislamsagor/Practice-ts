@@ -218,17 +218,20 @@
 // }
 // console.log(response1)
 // ENUM
-var Type;
-(function (Type) {
-    Type[Type["SUCCESS"] = 0] = "SUCCESS";
-    Type[Type["FAILURE"] = 1] = "FAILURE";
-    Type[Type["UNAUTHETICATED"] = 2] = "UNAUTHETICATED";
-    Type[Type["FORBIDDEN"] = 3] = "FORBIDDEN";
-})(Type || (Type = {}));
-const response1 = {
-    status: 200,
-    type: Type.SUCCESS,
-    data: {
-        message: "Data fetched successfully"
-    }
-};
+// enum Type { SUCCESS , FAILURE , UNAUTHETICATED , FORBIDDEN}
+// interface APIResponse<T>{
+//     status: number ;
+//     type: Type ;
+//     data: T;
+// }
+// const response1: APIResponse<object> = {
+//     status: 200,
+//     type: Type.SUCCESS,
+//     data: {
+//         message: "Data fetched successfully"
+//     }
+// }
+// let a = [2 , 'hello' , {p:3}]
+// // a[2] = false error message
+// a[3] = 2
+// let b: [string , number , object ] = ['string',34 , {p:3}]
