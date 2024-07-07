@@ -186,3 +186,34 @@
 // }
 
 // console.log(userDetails('123', {name:'sagor', age:34}))
+
+class Player {
+    name: string; 
+    age: number;
+    country: string
+
+    constructor(n:string , a:number , c:string){
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+
+    play(){
+       return `${this.name} from ${this.country} is playing`
+    }
+}
+
+const masrafi = new Player('masrafi' , 34 , 'Bangladesh')
+
+// console.log(masrafi)
+// console.log(masrafi.play())
+
+
+const players:Player[] = []
+
+// players.push('sagor') error message
+
+players.push(new Player('sagor', 34 , 'Bangladesh') )
+players.push(masrafi)
+
+console.log(players[0])
