@@ -293,25 +293,43 @@
 // let user = addId({name:"masrafi", age:23, country:"bangladesh"});
 
 
+// interface APIResponse<T>{
+//     status: number ;
+//     type: string ;
+//     data: T;
+// }
+
+
+// const response1: APIResponse<object>= {
+//     status: 200,
+//     type: "success",
+//     data: {
+//         message: "Data fetched successfully"
+//     }
+// }
+
+// const response2: APIResponse<string>= {
+//     status: 404,
+//     type: "error",
+//     data: "Data not found"
+// }
+
+// console.log(response1)
+
+// ENUM
+
+enum Type { SUCCESS , FAILURE , UNAUTHETICATED , FORBIDDEN}
+
 interface APIResponse<T>{
     status: number ;
-    type: string ;
+    type: Type ;
     data: T;
 }
 
-
-const response1: APIResponse<object>= {
+const response1: APIResponse<object> = {
     status: 200,
-    type: "success",
+    type: Type.SUCCESS,
     data: {
         message: "Data fetched successfully"
     }
 }
-
-const response2: APIResponse<string>= {
-    status: 404,
-    type: "error",
-    data: "Data not found"
-}
-
-console.log(response1)
