@@ -259,15 +259,59 @@
 
 // drawRectangle(options)
 
-import Player from "./classes/Player.js";
-import Isplayer from './interface/IsPlayer';
+// import Player from "./classes/Player.js";
+// import Isplayer from './interface/IsPlayer.js';
 
-const masrafi = new Player('masrafi' , 52 , 'bangladesh')
-let sakib : Isplayer;
+// const masrafi = new Player('masrafi' , 52 , 'bangladesh')
+// let sakib : Isplayer;
 
-sakib = new Player('sakib', 52 , 'bangladesh')
+// sakib = new Player('sakib', 52 , 'bangladesh')
 
-const players:Isplayer[] = []
+// const players:Isplayer[] = []
 
-players.push(masrafi)
-players.push(sakib)
+// players.push(masrafi)
+// players.push(sakib)
+
+// Generics
+
+// const addId = <T extends {name:string , age:number , country:string}>(obj:T) =>{
+//     let id = Math.floor(Math.random()*100);
+//     return {...obj , id};
+// }
+
+// // const addId = <T extends object>(obj:T) =>{
+// //     let id = Math.floor(Math.random()*100);
+// //     return {...obj , id};
+// // }
+
+// // let user = addId({
+// //     name:"masrafi",
+// //     age:20,
+// //     country:"bangladesh"
+// // });
+
+// let user = addId({name:"masrafi", age:23, country:"bangladesh"});
+
+
+interface APIResponse<T>{
+    status: number ;
+    type: string ;
+    data: T;
+}
+
+
+const response1: APIResponse<object>= {
+    status: 200,
+    type: "success",
+    data: {
+        message: "Data fetched successfully"
+    }
+}
+
+const response2: APIResponse<string>= {
+    status: 404,
+    type: "error",
+    data: "Data not found"
+}
+
+console.log(response1)
