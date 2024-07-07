@@ -1,4 +1,3 @@
-"use strict";
 // console.log('Starting')
 // const country = "I live in Sherpur"
 // console.log(country)
@@ -156,3 +155,11 @@
 // players.push(new Player('sagor', 34 , 'Bangladesh') )
 // players.push(masrafi)
 // console.log(players[0])
+import Player from './classes/Player.js';
+const masrafi = new Player('masrafi', 34, 'Bangladesh');
+const sakib = new Player('sakib', 34, 'Bangladesh');
+console.log(sakib.age);
+console.log(sakib.country);
+const Players = [];
+Players.push(masrafi);
+Players.push(sakib);

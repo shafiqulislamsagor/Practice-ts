@@ -227,3 +227,16 @@
 // players.push(masrafi)
 
 // console.log(players[0])
+
+import Player from './classes/Player.js'
+
+const masrafi = new Player('masrafi', 34 , 'Bangladesh')
+const sakib = new Player('sakib', 34 , 'Bangladesh')
+
+console.log(sakib.age)
+console.log(sakib.country)
+
+const Players: Player[] = []
+
+Players.push(masrafi)
+Players.push(sakib)
