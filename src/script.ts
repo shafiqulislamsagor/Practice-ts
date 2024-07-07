@@ -127,24 +127,62 @@
 // console.log(myFun('sagor','hasan'))
 // myFun('sagor' , 21) error massage
 
-type stringOrNumber = string | number
-type user = {
-    name:string , 
-    age:number
-} 
+// type stringOrNumber = string | number
+// type user = {
+//     name:string , 
+//     age:number
+// } 
 
-const userDetails = (
-    id: string | number , 
-    user : user
-) : any =>{
-    console.log(`User id is ${id} , name is ${user.name} , age is ${user.age}`)
-}
+// const userDetails = (
+//     id: string | number , 
+//     user : user
+// ) : any =>{
+//     console.log(`User id is ${id} , name is ${user.name} , age is ${user.age}`)
+// }
 
-const sayHello = (user:user):any =>{
-    console.log(`Hello ${user.age > 50 ? 'sir':'Mr'} ${user.name}`)
-}
+// const sayHello = (user:user):any =>{
+//     console.log(`Hello ${user.age > 50 ? 'sir':'Mr'} ${user.name}`)
+// }
 
 
-userDetails('123', {name:'sagor', age:34})
+// userDetails('123', {name:'sagor', age:34})
 
-sayHello({name:'sagor', age:34})
+// sayHello({name:'sagor', age:34})
+
+// let a :string ;
+
+// a = 'sagor'
+
+// let myFun: (x:string , y:string) => void;
+
+// let add: (x:number, y:number) => Number // function signatures
+
+
+// add = (a:number , b:number) =>{
+//     return a + b
+// }
+
+// let calculations : (x:number , y:number , z:string) => number;
+
+// calculations = (a:number ,b:number , c:string) =>{
+//   if(c === 'add'){
+//     return a + b
+//   }
+//   else{
+//     return a - b
+//   }
+// }
+
+// console.log(calculations(2 , 5 , 'add'))
+// console.log(calculations(2 , 5 , 'minus'))
+
+// type numberOrString = number | string ;
+// type userDatail = {name: string, age: number}
+
+// let userDetails: (id:numberOrString , userInfo:userDatail) => void;
+
+// userDetails = (idx: numberOrString , userDetailsInfo:userDatail) =>{
+//     return `${userDetailsInfo.name} ${idx}`
+// }
+
+// console.log(userDetails('123', {name:'sagor', age:34}))
