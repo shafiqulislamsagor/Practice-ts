@@ -228,15 +228,46 @@
 
 // console.log(players[0])
 
-import Player from './classes/Player.js'
+// import Player from './classes/Player.js'
 
-const masrafi = new Player('masrafi', 34 , 'Bangladesh')
-const sakib = new Player('sakib', 34 , 'Bangladesh')
+// const masrafi = new Player('masrafi', 34 , 'Bangladesh')
+// const sakib = new Player('sakib', 34 , 'Bangladesh')
 
-console.log(sakib.age)
-console.log(sakib.country)
+// console.log(sakib.age)
+// console.log(sakib.country)
 
-const Players: Player[] = []
+// const Players: Player[] = []
 
-Players.push(masrafi)
-Players.push(sakib)
+// Players.push(masrafi)
+// Players.push(sakib)
+
+
+// interface RectangleOptions {
+//     width: number,
+//     length: number,
+// }
+// function drawRectangle(options:RectangleOptions){
+//     let width = options.width
+//     let length = options.length
+// }
+
+// drawRectangle({width:20 , length:30})
+
+// // drawRectangle({width:12 , length:23 , height:20})
+
+// let options = {width:12 , length:23 , height:20}
+
+// drawRectangle(options)
+
+import Player from "./classes/Player.js";
+import Isplayer from './interface/IsPlayer';
+
+const masrafi = new Player('masrafi' , 52 , 'bangladesh')
+let sakib : Isplayer;
+
+sakib = new Player('sakib', 52 , 'bangladesh')
+
+const players:Isplayer[] = []
+
+players.push(masrafi)
+players.push(sakib)
